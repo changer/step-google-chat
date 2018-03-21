@@ -1,4 +1,4 @@
-box: debian:stable-slim
+box: wercker/default
 build:
     steps:
         - shellcheck:
@@ -11,5 +11,5 @@ build:
 publish:
   steps:
     - internal/publish-step:
-        owner: wercker
+        owner: safetychanger
 
